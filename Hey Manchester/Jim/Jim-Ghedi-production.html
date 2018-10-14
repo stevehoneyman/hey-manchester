@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Jim Ghedi - Production</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<style>
+
+		@font-face {
+    		font-family: 'Gothic725 Bd BT';
+    		src: url('../fonts/Gothic725BdBTRegular.woff2') format('woff2'),
+        		 url('../fonts/Gothic725BdBTRegular.woff') format('woff');
+    		font-weight: normal;
+    		font-style: normal;
+		}
+
+		@font-face {
+    		font-family: 'Gothic725 Blk BT';
+    		src: url('../fonts/Gothic725BlkBTRegular.woff2') format('woff2'),
+        		 url('../fonts/Gothic725BlkBTRegular.woff') format('woff');
+    		font-weight: normal;
+    		font-style: normal;
+		}
+
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			padding-top: 1rem;
+			text-transform: uppercase;
+			line-height: 1.2;
+		}
+		
+		.container {
+			width: 568px;
+			height: 800px;
+			padding: 30px;
+			margin: 0 auto;
+			background-color: #cad5fe;
+		}	
+
+		header {
+			width: 100%;
+			height: 30px;
+			padding: 6px;
+			margin-bottom: 45px;
+			font-family: Gothic725 Bd BT;
+			font-size: 16px;
+			color: #cad5fe;
+			background-color: #010300;
+		}
+
+		header p:first-of-type {
+			float: left;
+		}
+
+		header p:last-of-type {
+			float: right;
+		}
+
+		img {
+			display: block;
+			width: 440px;
+			margin: 0 auto 45px; 
+			mix-blend-mode: multiply;
+			clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+		}
+
+		section {
+			border: 2px solid #010300;
+		}
+
+		section p {
+			padding: 15px 0 1px 12px;
+		}
+
+		/* ----------------- type -------------- */
+
+		h1 .artist {
+			font-size: 71px;
+			line-height: 0.75;
+		}
+	
+		h1 .support {
+			font-size: 30px;
+		}
+		
+		h1, h2, .yep {
+			padding: 18px 0 0 12px;
+			border-bottom: 2px solid #010300;
+			font-family: Gothic725 Blk BT;
+		}
+
+		.support, 
+		h2 {
+			font-weight: 400;
+		}
+
+		h2, h3 {
+			font-size: 20px;
+		}
+
+		p {
+			font-family: Gothic725 Bd BT;
+		}
+
+		/* ------------ utilities -------------- */
+
+		.group:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<header>
+			<p>Hey Manchester Presents</p>
+			<p>Heymanchester.com</p>
+		</header>	
+		
+		<img src="../images/jim-ghedi-crop-adj.jpg" alt="Jim Ghedi looking epic in a field">	
+		
+		<section>
+			<h1>
+				<span class="artist">Jim Ghedi</span><br/ >
+				<span class="support">Plus DBH</span> 
+			</h1>
+			<h2>The Castle Hotel, Oldham Street</h2>
+			<h2>7.30pm Thursday 17 May 2018</h2>
+			<p>Tickets £8 adv from The Bar and Seetickets.com</p>
+		</section>
+	</div>
+</body>
+</html>
